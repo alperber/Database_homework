@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86FFD986-81E0-4796-A699-897D3DE0C2A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VeriTabani</RootNamespace>
+    <AssemblyName>VeriTabani</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiletAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletAl.Designer.cs">
+      <DependentUpon>BiletAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciPaneli.Designer.cs">
+      <DependentUpon>KullaniciPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSil.Designer.cs">
+      <DependentUpon>KullaniciSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesaj.Designer.cs">
+      <DependentUpon>Mesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcusEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusEkle.Designer.cs">
+      <DependentUpon>UcusEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcusEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UcusEkleSil.Designer.cs">
+      <DependentUpon>UcusEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeOl.Designer.cs">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BiletAl.resx">
+      <DependentUpon>BiletAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciPaneli.resx">
+      <DependentUpon>KullaniciPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSil.resx">
+      <DependentUpon>KullaniciSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesaj.resx">
+      <DependentUpon>Mesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusEkle.resx">
+      <DependentUpon>UcusEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcusEkleSil.resx">
+      <DependentUpon>UcusEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeOl.resx">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenci1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arac-listesi-karsilastirma-bos-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign-Error-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
